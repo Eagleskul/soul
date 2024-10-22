@@ -223,7 +223,7 @@ async def genkey(update: Update, context: CallbackContext):
 
 # Main function
 def main():
-    application = Application.builder().token(BOT_TOKEN).build()
+    application = Application.builder().token().build()
 
     # Command Handlers
     application.add_handler(CommandHandler("start", start))
@@ -242,8 +242,8 @@ def main():
     application.run_polling()
 
 # Bot token and user/channel details
-BOT_TOKEN = '6096723928:AAHUu_AeJ-PUV10ebxXCmTFggo0SEbvQyqQ'
-ADMIN_IDS = ['1009132250']  # Admin user IDs
+BOT_TOKEN = '7220168885:AAG9JG6dhk3vW-t7QGpNx2sLOBmmTNzlSiM'
+ADMIN_IDS = ['5563207685']  # Admin user IDs
 
 if __name__ == '__main__':
     main()
